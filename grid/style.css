@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    gap: 15px;
+    padding: 20px;  
+    display: grid;
+    overflow: auto;
+    grid-template-columns: 500px 400px 300px 1fr;
+    grid-template-rows: 250px 250px 50px;
+    grid-template-areas: "left-top top-center top-center2 top-right"
+                         "left-center center center top-right"
+                         "left-center center center right-bottom"    
+                         "left-bottom left-bottom center-bottom right-bottom" 
+                         "left-bottom  left-bottom center-bottom right-bottom"        
+    
+    ;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+#left-top{
+    background-image: url(./pictutres/pexels-emrecan-2189682.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    grid-area: left-top;
+    background-color: rgb(34, 82, 124);
+}
+#top-center{
+    background-image: url(./pictutres/pexels-jonas-svidras-759960.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+   grid-area: top-center;
+    background-color: red;
+}
+#top-center2{
+    background-image: url(./pictutres/pexels-mat-kedzia-1096222-2091009.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: top-center2;
+    border-radius: 20px;
+    background-color: yellow;
+}
+#top-right{
+    background-image: url(./pictutres/pexels-matthew-montrone-230847-1179225.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    grid-area: top-right;
+    background-color: green;
+}
+#left-center{
+    background-image: url(./pictutres/pexels-monique-laats-230726-733090.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    grid-area: left-center;
+    background-color: orange;
+}
+#center{
+    background-image: url(./pictutres/pexels-moose-photos-170195-1037993.jpg);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    grid-area: center;
+   background-color: black;
+}
+#left-bottom{
+    background-image: url(./pictutres/pexels-pixabay-417173.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    grid-area: left-bottom;
+  background-color: burlywood;
+}
+#center-bottom{
+    background-image: url(./pictutres/pexels-quang-nguyen-vinh-222549-2131841.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    grid-area: center-bottom;
+   background-color: brown;
+}
+#right-bottom{
+    background-image: url(./pictutres/pexels-quang-nguyen-vinh-222549-2166711.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    grid-area: right-bottom;
+   background-color: salmon;
+}

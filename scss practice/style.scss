@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@mixin flex(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-image: url(./pictures/nou.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    @include flex;    
+    padding: 30px;
+    gap: 20px;
+  
+    section{
+        height: 100%;
+        flex-grow: 1;
+        border-radius: 10px;
+    }
+    section:hover{
+        flex-grow: 2;
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+        cursor: pointer;
+    }
+
+
+  section:nth-child(1){
+    background-image: url(./pictures/ini.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+    section:nth-child(2){
+    background-image: url(./pictures/goat.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+    section:nth-child(3){
+    background-image: url(./pictures/ney.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+    section:nth-child(4){
+    background-image: url(./pictures/xavi.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+    section:nth-child(5){
+    background-image: url(./pictures/pedri.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+}
