@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@mixin cover(){
+    background-size: cover;
+    background-position: center;
+}
+@mixin grid(){
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 350px;
+    grid-template-areas: "left right right right"
+                         " left center-bottom center right-bottom";
+                          gap: 10px;
+
+}
+
+section{
+
+    @include grid();
+    height: 100%;
+    width: 100vw;
+    padding: 20px;
+    
+    div{
+        border-radius: 20px;        
+    }   
+     .left{
+        grid-area: left;
+        background-image: url(./pictutres/pexels-quang-nguyen-vinh-222549-2166711.jpg);
+        @include cover();
+       
+    }
+    .right{
+        grid-area: right;
+        background-image: url(./pictutres/pexels-jonas-svidras-759960.jpg);
+        @include cover();
+    }
+    .center-bottom{
+        grid-area: center-bottom;
+        background-image: url(./pictutres/pexels-matthew-montrone-230847-1179225.jpg);
+        @include cover();
+    }
+    .center{
+        grid-area: center;
+        background-image: url(./pictutres/pexels-moose-photos-170195-1037993.jpg);
+        @include cover();
+    }
+    .right-bottom{
+        grid-area: right-bottom;
+        background-image: url(./pictutres/pexels-pixabay-417173.jpg);
+        @include cover();
+    }
+}
+
