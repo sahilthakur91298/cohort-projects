@@ -1,39 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body,html{
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+            padding: 20px;
+        }
 
+        .box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            min-width: 300px;
+            transition: background-color 0.5s ease;
+        }
 
-}
+        .box h1 {
+            text-transform: uppercase;
+            font-size: 24px;
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
 
-.box{
-    width: 400px;
-    height: 400px;
-    background-color: #fff;
-    border-radius: 10px;
-}
-button{
-    background-color: aqua;
-    font-size: 25px;
-    padding: 10px 55px;
-    cursor: pointer;
-    border-radius: 50px;
-}
+        .box h1:hover {
+            transform: scale(1.05);
+            background-color: #e0e0e0;
+        }
 
-button:active{
-    transform: scale(0.9);
-    transition: all 0.5s ease;
-    background-color: beige;
-    
-}
+        button {
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            display: none;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
