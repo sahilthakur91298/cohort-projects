@@ -36,7 +36,7 @@
             },
         ];
 
-
+        
         let winners = "";
         arr.forEach((el, idx) => {
             winners += `<h1 id="${idx}">${el.team}</h1>`;
