@@ -147,6 +147,7 @@ const applicants = [
     atLogo: "https://img.icons8.com/ios-filled/50/000000/at-sign.png"
   }
 ];
+
 return (
       <div className="parent">
       {applicants.map((elem, index) => (
